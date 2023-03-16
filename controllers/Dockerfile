@@ -10,6 +10,9 @@ ARG WEBOTS_CONTROLLER_URL
 ENV WEBOTS_CONTROLLER_URL=${WEBOTS_CONTROLLER_URL}
 WORKDIR /usr/local/webots-project/controllers/participant
 
+# Compile the C++ controller
+RUN cd /usr/local/webots-project/controllers && make
+
 # We run the controller using the extern controller launcher
 # https://cyberbotics.com/doc/guide/running-extern-robot-controllers?version=develop&tab-os=linux
 # (In shell form to allow variable expansion)

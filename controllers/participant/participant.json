@@ -1,6 +1,6 @@
 {
-  "name": "My name",
-  "description": "Description of my robot controller program.",
-  "country": "ISO 3166-1 alpha-2 country code",
-  "programming": "Python"
+  "name": "C++ controller",
+  "description": "C++ controller from Webots' samples. Shows how to use RobotisOp2GaitManager.",
+  "country": "demo",
+  "programming": "C++"
 }
