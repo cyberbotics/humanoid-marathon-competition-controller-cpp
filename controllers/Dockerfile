@@ -16,4 +16,4 @@ RUN cd /usr/local/webots-project/controllers && make
 # We run the controller using the extern controller launcher
 # https://cyberbotics.com/doc/guide/running-extern-robot-controllers?version=develop&tab-os=linux
 # (In shell form to allow variable expansion)
-ENTRYPOINT /usr/local/webots/webots-controller --robot-name="${WEBOTS_CONTROLLER_URL}" --port="${PORT}" participant.py
+ENTRYPOINT /usr/local/webots/webots-controller --robot-name="${WEBOTS_CONTROLLER_URL}" --port="${PORT}" participant
